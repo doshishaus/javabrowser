@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowserController">
+    <top>
+        <VBox fx:controller="your.package.BrowserController">
+            <HBox>
+                <TextField fx:id="urlField" HBox.hgrow="ALWAYS" />
+                <Button text="Go" onAction="#handleGo" />
+            </HBox>
+            <ProgressBar fx:id="progressBar" prefWidth="200" visible="false"/>
+            <TabPane fx:id="tabPane" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane" />
+    </center>
+</BorderPane>

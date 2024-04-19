@@ -1,0 +1,12 @@
+.root {
+    -fx-font-size: 12pt;
+}
+
+.button {
+    -fx-background-color: lightgray;
+}
+
+.text-field {
+    -fx-border-color: black;
+    -fx-border-radius: 4;
+}
